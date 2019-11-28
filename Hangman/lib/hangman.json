@@ -1,0 +1,118 @@
+{
+  "word": "fruit",
+  "results": [
+    {
+      "definition": "an amount of a product",
+      "partOfSpeech": "noun",
+      "synonyms": [
+        "yield"
+      ],
+      "typeOf": [
+        "production",
+        "product"
+      ]
+    },
+    {
+      "definition": "bear fruit",
+      "partOfSpeech": "verb",
+      "typeOf": [
+        "bear",
+        "turn out"
+      ],
+      "derivation": [
+        "fruition",
+        "fruitage"
+      ],
+      "examples": [
+        "the trees fruited early this year"
+      ]
+    },
+    {
+      "definition": "cause to bear fruit",
+      "partOfSpeech": "verb",
+      "derivation": [
+        "fruitage"
+      ]
+    },
+    {
+      "definition": "the consequence of some effort or action",
+      "partOfSpeech": "noun",
+      "typeOf": [
+        "consequence",
+        "aftermath"
+      ],
+      "examples": [
+        "he lived long enough to see the fruit of his policies"
+      ]
+    },
+    {
+      "definition": "the ripened reproductive body of a seed plant",
+      "partOfSpeech": "noun",
+      "typeOf": [
+        "reproductive structure"
+      ],
+      "hasTypes": [
+        "capitulum",
+        "chokecherry",
+        "cubeb",
+        "drupe",
+        "ear",
+        "edible fruit",
+        "elk nut",
+        "false fruit",
+        "fruitlet",
+        "gourd",
+        "hagberry",
+        "hip",
+        "juniper berry",
+        "marasca",
+        "may apple",
+        "multiple fruit",
+        "oil nut",
+        "olive",
+        "pod",
+        "pome",
+        "prairie gourd",
+        "pseudocarp",
+        "pyxidium",
+        "pyxis",
+        "quandong",
+        "rose hip",
+        "rosehip",
+        "rowanberry",
+        "schizocarp",
+        "seed",
+        "seedpod",
+        "spike",
+        "accessory fruit",
+        "syncarp",
+        "wild cherry",
+        "yellow berry",
+        "stone fruit",
+        "achene",
+        "acorn",
+        "aggregate fruit",
+        "berry",
+        "blue fig",
+        "buckthorn berry",
+        "buffalo nut"
+      ],
+      "derivation": [
+        "fructify",
+        "fruiterer",
+        "fruitlet",
+        "fruity"
+      ]
+    }
+  ],
+  "syllables": {
+    "count": 1,
+    "list": [
+      "fruit"
+    ]
+  },
+  "pronunciation": {
+    "all": "frut"
+  },
+  "frequency": 4.37
+}
