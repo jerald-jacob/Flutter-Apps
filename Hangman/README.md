@@ -1,4 +1,4 @@
-# hangman
+# Hangman
 ## Getting Started
 
 Hangman-Game
@@ -18,11 +18,12 @@ Download the apk file attached in the repository
 *) Enter the guessed character
 *) Every wrong answer their should be a hangman image displayed
 
-Technologies Used
+</h1>Technologies Used</h1>
 
-FLUTTER/REST API
+FLUTTER
+REST API
 
-Code Explanation
+<h1>Code Explanation</h1>
 
 Basically, the meat and potatoes of the code is in the dart file, where the variables and game logic is stored
 The Flutter UI sets up the basic elements of the game such as the title, pictures and audio, text elements indicating progress and points, etc.
