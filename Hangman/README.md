@@ -18,7 +18,7 @@ Download the apk file attached in the repository
 *) Enter the guessed character
 *) Every wrong answer their should be a hangman image displayed
 
-</h1>Technologies Used</h1>
+<h1>Technologies Used</h1>
 
 FLUTTER
 REST API
