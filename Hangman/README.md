@@ -10,13 +10,13 @@ Simply begin typing to enter your guesses
 You only have 5 guesses until the current word is cleared and the next one is loaded
 Your wins and failed attempts are recorded
 
-Requirements
+<h2>Requirements</h2>
 
 Download the apk file attached in the repository
-*) Enter your name before you started
-*) Select which type of word you guess
-*) Enter the guessed character
-*) Every wrong answer their should be a hangman image displayed
+<ol> Enter your name before you started</ol>
+<ol> Select which type of word you guess</ol>
+<ol> Enter the guessed character</ol>
+<ol> Every wrong answer their should be a hangman image displayed</ol>
 
 <h1>Technologies Used</h1>
 
