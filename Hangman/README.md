@@ -12,11 +12,11 @@ Your wins and failed attempts are recorded
 
 <h2>Requirements</h2>
 
-Download the apk file attached in the repository
-<ol> Enter your name before you started</ol>
-<ol> Select which type of word you guess</ol>
-<ol> Enter the guessed character</ol>
-<ol> Every wrong answer their should be a hangman image displayed</ol>
+<ol>Download the apk file attached in the repository
+<li> Enter your name before you started</li>
+<li> Select which type of word you guess</li>
+<li> Enter the guessed character</li>
+<li> Every wrong answer their should be a hangman image displayed</li></ol>
 
 <h1>Technologies Used</h1>
 
