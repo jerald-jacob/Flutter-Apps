@@ -12,7 +12,7 @@ Your wins and failed attempts are recorded
 
 <h2>Requirements</h2>
 <ul>
-<ll>Download the apk file attached in the repository
+<ll>Download the apk file attached in the repository</li>
 <li> Enter your name before you started</li>
 <li> Select which type of word you guess</li>
 <li> Enter the guessed character</li>
