@@ -1,8 +1,33 @@
 # hangman
+## Getting Started
 
+Hangman-Game
 A new Flutter application.
 
-## Getting Started
+<h1>Description</h1>
+
+Simply begin typing to enter your guesses
+You only have 5 guesses until the current word is cleared and the next one is loaded
+Your wins and failed attempts are recorded
+
+Requirements
+
+Download the apk file attached in the repository
+*) Enter your name before you started
+*) Select which type of word you guess
+*) Enter the guessed character
+*) Every wrong answer their should be a hangman image displayed
+
+Technologies Used
+
+FLUTTER/REST API
+
+Code Explanation
+
+Basically, the meat and potatoes of the code is in the dart file, where the variables and game logic is stored
+The Flutter UI sets up the basic elements of the game such as the title, pictures and audio, text elements indicating progress and points, etc.
+
+
 
 This project is a starting point for a Flutter application.
 
