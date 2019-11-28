@@ -11,12 +11,12 @@ You only have 5 guesses until the current word is cleared and the next one is lo
 Your wins and failed attempts are recorded
 
 <h2>Requirements</h2>
-
-<ol>Download the apk file attached in the repository
+<ul>
+<ll>Download the apk file attached in the repository
 <li> Enter your name before you started</li>
 <li> Select which type of word you guess</li>
 <li> Enter the guessed character</li>
-<li> Every wrong answer their should be a hangman image displayed</li></ol>
+<li> Every wrong answer their should be a hangman image displayed</li></ul>
 
 <h1>Technologies Used</h1>
 
