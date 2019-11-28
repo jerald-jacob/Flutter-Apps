@@ -20,8 +20,10 @@ Your wins and failed attempts are recorded
 
 <h1>Technologies Used</h1>
 
-FLUTTER
-REST API
+<ul>
+<li>FLUTTER</li>
+<li>REST API</li>
+</ul>
 
 <h1>Code Explanation</h1>
 
