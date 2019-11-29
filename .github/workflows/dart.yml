@@ -1,18 +1,16 @@
-name: Flutter-Apps
-
+name: Hangman
 on: [push, pull_request]
 
 jobs:
-  build:
 
+  package-analysis:
     runs-on: ubuntu-latest
-
-    container:
-      image:  google/dart:latest
-
     steps:
-    - uses: axel-op/dart-package-analyzer@v2.0.0
-    - name: Dart/Flutter Package Analyzer
-      run: pub get
-    - name: Run tests
-      run: pub run test
+      - uses: actions/checkout@v1 # required
+      - uses: axel-op/dart-package-analyzer@stable
+        with:
+          # Required:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          # Optional:
+          relativePath: packages/mypackage/
+          minAnnotationLevel: info
