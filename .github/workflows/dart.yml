@@ -1,12 +1,11 @@
 name: Hangman
-on: [push, pull_request]
+on: [push]
 
 jobs:
-
   package-analysis:
     runs-on: ubuntu-latest
     steps:
-      - uses: axel-op/dart-package-analyzer/with-full-sdk@stable
+      - uses: actions/checkout@v1 # required
       - uses: axel-op/dart-package-analyzer@stable
         with:
           # Required:
