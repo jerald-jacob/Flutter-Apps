@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hangman/screens/HomePage.dart';
+import 'package:hangman/screens/login_page.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 
 main() {
@@ -20,7 +22,7 @@ class _MyAppState extends State<MyApp1> {
     return new SplashScreen(
       loaderColor: Colors.white,
       seconds: 7,
-      navigateAfterSeconds: new MainPage(),
+      navigateAfterSeconds: new MyApp(),
       title: new Text(
         'Tell me wow ',
         style: new TextStyle(
@@ -39,3 +41,15 @@ class _MyAppState extends State<MyApp1> {
   }
 }
 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Login',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: LoginPage(),
+    );
+  }
+}
