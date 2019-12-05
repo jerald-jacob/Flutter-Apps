@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hangman/screens/sign_in.dart';
 
-import 'HomePage.dart';
+import 'first_screen.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image.asset('images/hangman_logo.png', height: 180.0),
+              FlutterLogo(size: 150),
               SizedBox(height: 50),
               _signInButton(),
             ],
@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (context) {
-                return MainPage();
+                return FirstScreen();
               },
             ),
           );
@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image(image: AssetImage("images/google_logo.png"), height: 35.0),
+            Image(image: AssetImage("assets/google_logo.png"), height: 35.0),
             Padding(
               padding: const EdgeInsets.only(left: 10),
               child: Text(
