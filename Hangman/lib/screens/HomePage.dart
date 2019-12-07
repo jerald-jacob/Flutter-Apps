@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hangman/screens/sign_in.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
 import '../Next.dart';
+import 'login_page.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -10,181 +12,205 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+
   Widget build(BuildContext context) {
+    double _screenHeight = MediaQuery.of(context).size.height;
     return MaterialApp(
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+
       home: Scaffold(
-        backgroundColor: Color.fromRGBO(234, 182, 111, 88),
+        backgroundColor: Color.fromRGBO(34, 80, 41, 55),
         body: SafeArea(
           child: ListView(
             children: <Widget>[
               Container(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(85, 15, 30, 10),
-                  child: Text(
-                    "Can you guess the word?",
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontFamily: 'Caesar_Dressing',
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                height: 100,
+
                 color: Color.fromRGBO(34, 80, 41, 55),
-                margin: EdgeInsets.all(8.0),
-                child: Image.asset(
-                  'images/Hangman-Logo.png',
-                  width: 295,
-                  height: 280,
-                ),
-              ),
-              Container(
-                  height: 580,
-                  // color: Colors.white,
-                  color: Color.fromRGBO(34, 80, 41, 20),
-                  margin: EdgeInsets.all(8.0),
-                  child: Center(
-                    child: Column(
-                      children: <Widget>[
-                        SizedBox(
-                          width: 0,
-                          height: 80,
-                        ),
-                        RaisedButton(
-                          onPressed: () {
-                            Navigator.of(context).push(_createRoute());
-                          },
-                          textColor: Colors.white,
-                          padding: const EdgeInsets.all(3.0),
-                          child: Container(
-                            //   decoration: const BoxDecoration(
-                            color: Color.fromRGBO(16, 50, 33, 20),
-//                            gradient: LinearGradient(
-//                              colors: <Color>[
-//                                Color(0xFF0D47A1),
-//                                Color(0xFF1976D2),
-//                                Color(0xFF42A5F5),
-//                              ],
-//                            ),
-                            //   ),
-                            padding: const EdgeInsets.all(10.0),
-                            child: const Text(
-                              'ONE PLAYER',
-                              style: TextStyle(
-                                fontSize: 30,
-                                fontFamily: 'Caesar_Dressing',
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
+
+                child:
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+
+
+                    Image.asset(
+                    'images/Hangman-Logo.png',
+                   // height: 280,
+                  ),
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(85, 15, 30, 10),
+                        child: Text(
+                          "Can you guess the word?",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontFamily: 'Caesar_Dressing',
+                            color: Colors.yellow.withOpacity(.8),
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        RaisedButton(
-                          onPressed: () {
-                            Navigator.of(context).push(_createRoute());
-                          },
-                          textColor: Colors.white,
-                          padding: const EdgeInsets.all(3.0),
-                          child: Container(
-                            //   decoration: const BoxDecoration(
-                            color: Color.fromRGBO(16, 50, 33, 20),
-//                            gradient: LinearGradient(
-//                              colors: <Color>[
-//                                Color(0xFF0D47A1),
-//                                Color(0xFF1976D2),
-//                                Color(0xFF42A5F5),
-//                              ],
-//                            ),
-                            //   ),
-                            padding: const EdgeInsets.all(10.0),
-                            child: const Text(
-                              'TWO PLAYER',
-                              style: TextStyle(
-                                fontSize: 30,
-                                fontFamily: 'Caesar_Dressing',
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        RaisedButton(
-                          onPressed: () {
-                            _gameOptions();
-                          },
-                          textColor: Colors.white,
-                          padding: const EdgeInsets.all(3.0),
-                          child: Container(
-                            //   decoration: const BoxDecoration(
-                            color: Color.fromRGBO(16, 50, 33, 20),
-//                            gradient: LinearGradient(
-//                              colors: <Color>[
-//                                Color(0xFF0D47A1),
-//                                Color(0xFF1976D2),
-//                                Color(0xFF42A5F5),
-//                              ],
-//                            ),
-                            //   ),
-                            padding: const EdgeInsets.all(10.0),
-                            child: const Text(
-                              'OPTIONS',
-                              style: TextStyle(
-                                fontSize: 30,
-                                fontFamily: 'Caesar_Dressing',
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        RaisedButton(
-                          onPressed: () {
-                            _aboutGame();
-                          },
-                          textColor: Colors.white,
-                          padding: const EdgeInsets.all(3.0),
-                          child: Container(
-                            //   decoration: const BoxDecoration(
-                            color: Color.fromRGBO(16, 50, 33, 20),
-//                            gradient: LinearGradient(
-//                              colors: <Color>[
-//                                Color(0xFF0D47A1),
-//                                Color(0xFF1976D2),
-//                                Color(0xFF42A5F5),
-//                              ],
-//                            ),
-                            //   ),
-                            padding: const EdgeInsets.all(10.0),
-                            child: const Text(
-                              'ABOUT GAME',
-                              style: TextStyle(
-                                fontSize: 25,
-                                fontFamily: 'Caesar_Dressing',
-                                color: Colors.white,
-                                //
-                                // fontWeight: FontWeight.,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
-                  )),
+                    CircleAvatar(
+                      backgroundImage: NetworkImage(
+                        imageUrl,
+                      ),
+                      radius: 60,
+                      backgroundColor: Colors.transparent,
+                    ),
+                    Text(
+                      name,
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.white.withOpacity(.5),
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Container(
+                        color: Color.fromRGBO(34, 80, 41, 20),
+                        margin: EdgeInsets.all(8.0),
+                        child: Center(
+                          child: Column(
+                            children: <Widget>[
+                              SizedBox(
+                                width: 0,
+                                height: 80,
+                              ),
+                              RaisedButton(
+                                onPressed: () {
+                                  Navigator.of(context).push(_createRoute());
+                                },
+                                textColor: Colors.white,
+                                padding: const EdgeInsets.all(3.0),
+                                child: Container(
+                                  //   decoration: const BoxDecoration(
+                                  color: Color.fromRGBO(16, 50, 33, 20),
+//                            gradient: LinearGradient(
+//                              colors: <Color>[
+//                                Color(0xFF0D47A1),
+//                                Color(0xFF1976D2),
+//                                Color(0xFF42A5F5),
+//                              ],
+//                            ),
+                                  //   ),
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: const Text(
+                                    'ONE PLAYER',
+                                    style: TextStyle(
+                                      fontSize: 30,
+                                      fontFamily: 'Caesar_Dressing',
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 30,
+                              ),
+                              RaisedButton(
+                                onPressed: () {
+                                  Navigator.of(context).push(_createRoute());
+                                },
+                                textColor: Colors.white,
+                                padding: const EdgeInsets.all(3.0),
+                                child: Container(
+                                  //   decoration: const BoxDecoration(
+                                  color: Color.fromRGBO(16, 50, 33, 20),
+//                            gradient: LinearGradient(
+//                              colors: <Color>[
+//                                Color(0xFF0D47A1),
+//                                Color(0xFF1976D2),
+//                                Color(0xFF42A5F5),
+//                              ],
+//                            ),
+                                  //   ),
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: const Text(
+                                    'TWO PLAYER',
+                                    style: TextStyle(
+                                      fontSize: 30,
+                                      fontFamily: 'Caesar_Dressing',
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 30,
+                              ),
+                              RaisedButton(
+                                onPressed: () {
+                                  _gameOptions();
+                                },
+                                textColor: Colors.white,
+                                padding: const EdgeInsets.all(3.0),
+                                child: Container(
+                                  //   decoration: const BoxDecoration(
+                                  color: Color.fromRGBO(16, 50, 33, 20),
+//                            gradient: LinearGradient(
+//                              colors: <Color>[
+//                                Color(0xFF0D47A1),
+//                                Color(0xFF1976D2),
+//                                Color(0xFF42A5F5),
+//                              ],
+//                            ),
+                                  //   ),
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: const Text(
+                                    'OPTIONS',
+                                    style: TextStyle(
+                                      fontSize: 30,
+                                      fontFamily: 'Caesar_Dressing',
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 30,
+                              ),
+                              RaisedButton(
+                                onPressed: () {
+                                  _aboutGame();
+                                },
+                                textColor: Colors.white,
+                                padding: const EdgeInsets.all(3.0),
+                                child: Container(
+                                  //   decoration: const BoxDecoration(
+                                  color: Color.fromRGBO(16, 50, 33, 20),
+//                            gradient: LinearGradient(
+//                              colors: <Color>[
+//                                Color(0xFF0D47A1),
+//                                Color(0xFF1976D2),
+//                                Color(0xFF42A5F5),
+//                              ],
+//                            ),
+                                  //   ),
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: const Text(
+                                    'ABOUT GAME',
+                                    style: TextStyle(
+                                      fontSize: 25,
+                                      fontFamily: 'Caesar_Dressing',
+                                      color: Colors.white,
+                                      //
+                                      // fontWeight: FontWeight.,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        )),
+                  ],
+                )
+
+              ),
             ],
           ),
         ),
