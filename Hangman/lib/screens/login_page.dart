@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hangman/screens/sign_in.dart';
 
+import 'HomePage.dart';
 import 'first_screen.dart';
 
 class LoginPage extends StatefulWidget {
@@ -37,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (context) {
-                return FirstScreen();
+                return MainPage();
               },
             ),
           );

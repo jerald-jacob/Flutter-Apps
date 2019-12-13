@@ -4,6 +4,8 @@ import 'package:hangman/screens/login_page.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import 'one_player_page.dart';
+
 
 main() {
   runApp(MaterialApp(
@@ -22,7 +24,7 @@ class _MyAppState extends State<MyApp1> {
     return new SplashScreen(
       loaderColor: Colors.white,
       seconds: 7,
-      navigateAfterSeconds: new MyApp(),
+      navigateAfterSeconds: new SecondPage(),
       title: new Text(
         'Tell me wow ',
         style: new TextStyle(
