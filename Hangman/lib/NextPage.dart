@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'Next.dart';
+import 'one_player_page.dart';
 
 String _email = '';
 
@@ -85,63 +85,8 @@ class Page11 extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Color.fromRGBO(81, 23, 19, 5),
         body: SafeArea(
-//            child: Column(
-//          mainAxisAlignment: MainAxisAlignment.center,
-//          children: <Widget>[
-//            Image.asset('images/maingif.gif'),
-//            Text('HANGMAN',
-//                style: TextStyle(
-//                    fontFamily: 'Pacifico',
-//                    color: Colors.teal.shade50,
-//                    fontSize: 40,
-//                    fontWeight: FontWeight.bold)),
-//            MaterialButton(
-//                child: Text(
-//                  'PLAY',
-//                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-//                ),
-//                textTheme: ButtonTextTheme.accent,
-//                color: Colors.orange,
-//                onPressed: () {
-//                  Navigator.of(context).push(_createRoute());
-//                }),
-//            Card(
-//              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-//              color: Colors.white,
-//              child: Padding(
-//                padding: EdgeInsets.all(15),
-//                child: Row(
-//                  children: <Widget>[
-//                    Icon(
-//                      Icons.email,
-//                      color: Colors.teal,
-//                    ),
-//                    SizedBox(width: 15.0),
-//                    Text(
-//                      'Jeraldjacob10@gmail.com',
-//                      style: TextStyle(
-//                          fontSize: 20.0,
-//                          fontFamily: 'Source Sans Pro',
-//                          color: Colors.teal),
-//                    )
-//                  ],
-//                ),
-//              ),
-//            )
-//          ],
-//        ),
           child: ListView(
             children: <Widget>[
-              // Max Size
-//              Container(
-//                  height: 100,
-//                  color: Color.fromRGBO(90, 58, 29, 10),
-//                  margin: EdgeInsets.all(8.0),
-//                  child: Image.asset(
-//                    'images/maingif.gif',
-//                    width: 300,
-//                    height: 280,
-//                  )),
               Container(
                 height: 100,
                 color: Color.fromRGBO(90, 58, 29, 10),
@@ -177,7 +122,7 @@ class Page11 extends StatelessWidget {
                           decoration: InputDecoration(
 //Add th Hint text here.
 
-                            hintText: "Enter your name",
+                            hintText: "Enter  name",
                             hintStyle: TextStyle(
                                 fontSize: 20.0,
                                 color: Colors.white60,

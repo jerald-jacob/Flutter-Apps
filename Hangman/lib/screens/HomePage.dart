@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hangman/screens/sign_in.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
-import '../Next.dart';
+import '../one_player_page.dart';
 import 'login_page.dart';
 
 class MainPage extends StatefulWidget {
