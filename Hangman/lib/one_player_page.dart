@@ -351,7 +351,7 @@ class _SecondPageState extends State<SecondPage> {
   var _gameStatus = false;
   Set _guessedCharacters = new Set();
   Set _wrongGuessCharacters = new Set();
-  String _imagePath = 'images/hangman/0.png';
+  String _imagePath = 'images/hangman/0hangman.png';
   final String url = "https://www.randomlists.com/data/vocabulary-words.json";
   String _wordFromAPI;
   String _wordHint;
@@ -1131,20 +1131,26 @@ class _SecondPageState extends State<SecondPage> {
       this._imagePath = 'images/hangman/win.jpg';
   //    _winTheGame();
     } else if (_wrongGuessCharacters.length == 1) {
-      this._imagePath = 'images/hangman/1.png';
+      this._imagePath = 'images/hangman/1hangman.png';
     } else if (_wrongGuessCharacters.length == 2) {
-      this._imagePath = 'images/hangman/2.png';
+      this._imagePath = 'images/hangman/2hangman.png';
     } else if (_wrongGuessCharacters.length == 3) {
-      this._imagePath = 'images/hangman/3.png';
+      this._imagePath = 'images/hangman/3hangman.png';
     } else if (_wrongGuessCharacters.length == 4) {
-      this._imagePath = 'images/hangman/4.png';
+      this._imagePath = 'images/hangman/4hangman.png';
     } else if (_wrongGuessCharacters.length == 5) {
-      this._imagePath = 'images/hangman/5.png';
+      this._imagePath = 'images/hangman/5hangman.png';
     } else if (_wrongGuessCharacters.length == 6) {
-      this._imagePath = 'images/hangman/6.png';
+      this._imagePath = 'images/hangman/6hangman.png';
     } else if (_wrongGuessCharacters.length == 7) {
-      this._imagePath = 'images/hangman/7.png';
-    } else if (_wrongGuessCharacters.length >= 8) {
+      this._imagePath = 'images/hangman/7hangman.png';
+    }
+    else if (_wrongGuessCharacters.length == 8) {
+      this._imagePath = 'images/hangman/8hangman.png';
+    }
+    else if (_wrongGuessCharacters.length == 9) {
+      this._imagePath = 'images/hangman/9hangman.png';
+    } else if (_wrongGuessCharacters.length >= 9) {
     }
   }
 
@@ -1272,7 +1278,7 @@ class _SecondPageState extends State<SecondPage> {
   }
 
   void Lost() {
-    if( _wrongGuessCharacters.length>=8){
+    if( _wrongGuessCharacters.length>=9){
       _lossTheGame();
     }
   }

@@ -5,6 +5,7 @@ import 'package:splashscreen/splashscreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'one_player_page.dart';
+import 'screens/words/get_words_list.dart';
 
 
 main() {
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp1> {
     return new SplashScreen(
       loaderColor: Colors.white,
       seconds: 7,
-      navigateAfterSeconds: new SecondPage(),
+      navigateAfterSeconds: new GetWordsList(),
       title: new Text(
         'Tell me wow ',
         style: new TextStyle(
