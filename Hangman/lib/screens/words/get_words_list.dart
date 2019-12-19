@@ -15,7 +15,7 @@ class GetWordsList extends StatefulWidget {
 
 class GetWordsListPresenterState extends State<GetWordsList> implements GetWordsListPresenterContract {
   GetWordsListPresenter _presenter;
-  List<HMWords>_wordsList;
+  List<HMWords>_wordsList=new List();
   GetWordsListPresenterState(){
     _presenter=new GetWordsListPresenter(this);
   }
@@ -62,7 +62,7 @@ body: ListView(
 
     _wordsList.addAll(data.diaryList);
     print("data fetch success");
-    print(data.diaryList);
+
   }
 
 
