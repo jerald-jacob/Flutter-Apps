@@ -493,7 +493,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontWeight: FontWeight.w300,
                           ),
                         )
-                        ),
+                    ),
 
                     SizedBox(
                       height: 30,
@@ -1037,7 +1037,7 @@ class _SecondPageState extends State<SecondPage> {
                       child: Row(
                         children: <Widget>[
                           new MaterialButton(
-                              // textColor: Colors.re,
+                            // textColor: Colors.re,
                               color: Color.fromRGBO(34, 80, 41, 89),
                               child: new Text(
                                 "BACK",
@@ -1059,7 +1059,7 @@ class _SecondPageState extends State<SecondPage> {
                             width: 90,
                           ),
                           new MaterialButton(
-                              // textColor: Colors.re,
+                            // textColor: Colors.re,
                               color: Color.fromRGBO(34, 80, 41, 89),
                               child: new Text(
                                 "CHECK",
@@ -1129,7 +1129,7 @@ class _SecondPageState extends State<SecondPage> {
 
     if (_resultString == _wordFromAPI) {
       this._imagePath = 'images/hangman/win.jpg';
-  //    _winTheGame();
+      //    _winTheGame();
     } else if (_wrongGuessCharacters.length == 1) {
       this._imagePath = 'images/hangman/1hangman.png';
     } else if (_wrongGuessCharacters.length == 2) {

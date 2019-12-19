@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp1> {
   Widget build(BuildContext context) {
     return new SplashScreen(
       loaderColor: Colors.white,
-      seconds: 7,
+      seconds: 3,
       navigateAfterSeconds: new GetWordsList(),
       title: new Text(
         'Tell me wow ',

@@ -1,9 +1,10 @@
 import 'dart:async';
 
-class HMWordsList  {
+class HMWordsList {
   static const LIMIT = 10;
   List<HMWords> diaryList = new List();
   int lastUpdateDate;
+
   /// Parse the server response
   HMWordsList(Map responseMap, {int trackableId}) {
     if (null != responseMap && responseMap.isNotEmpty) {
@@ -14,7 +15,6 @@ class HMWordsList  {
       for (dynamic result in results) {
         HMWords diary = new HMWords(result);
         diaryList.add(diary);
-
       }
     }
   }
@@ -34,10 +34,7 @@ class HMWordsList  {
     }
     return -1;
   }
-
-
 }
-
 
 class HMWords {
   static const tableName = "hm_words";
@@ -111,7 +108,8 @@ class HMWords {
           diaryDataList.add(data);
         }
 
-        Map<String, List<Map<String, dynamic>>> insertData = Map<String, List<Map<String, dynamic>>>();
+        Map<String, List<Map<String, dynamic>>> insertData =
+            Map<String, List<Map<String, dynamic>>>();
         insertData[tableName] = diaryDataList;
         return 0;
       } else {
@@ -126,7 +124,6 @@ class HMWords {
   HMWords.fillFromDBMap(Map values) {
     name = values["name"];
     detail = values["detail"];
-
   }
 
   /// The function will fetch details of diary with the given
