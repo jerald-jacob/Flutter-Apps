@@ -56,8 +56,19 @@ class GetWordsListPresenterState extends State<GetWordsList>
     ),
     home:
       Scaffold(
-      backgroundColor: Color.fromRGBO(122, 147, 116, 88),
-      body: SafeArea(
+    //  backgroundColor: Color.fromRGBO(122, 147, 116, 88),
+      body:
+    DecoratedBox(
+    position: DecorationPosition.background,
+    decoration: BoxDecoration(
+    color: Colors.red,
+    image: DecorationImage(
+    image: AssetImage('images/hangman/background_image.png'),
+    fit: BoxFit.cover),
+    )
+    ,
+child:
+      SafeArea(
         child:this.showLoadingProgress ? circularProgress : _wordsList.isEmpty?Text("welcome to game"):
         ListView(
           children: <Widget>[
@@ -73,8 +84,8 @@ class GetWordsListPresenterState extends State<GetWordsList>
             ),
 
             Container(
-              height: 400,
-              color: Color.fromRGBO(34, 80, 41, 20),
+              height: 500,
+            //  color: Color.fromRGBO(34, 80, 41, 20),
               margin: EdgeInsets.all(8.0),
               child: Column(
                 children: <Widget>[
@@ -87,7 +98,7 @@ class GetWordsListPresenterState extends State<GetWordsList>
                               _currentUser +
                               "\n Hint : $_wordFromAPI",
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 22,
                             fontFamily: 'Lato',
                             color: Colors.white,
                             fontWeight: FontWeight.w300,
@@ -100,7 +111,7 @@ class GetWordsListPresenterState extends State<GetWordsList>
                       child: Text(
                         " " + resultList.toString(),
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 22,
                           fontFamily: 'Caesar_Dressing',
                           color: Colors.white,
                           fontWeight: FontWeight.w300,
@@ -121,11 +132,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                             child: new MaterialButton(
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "Q",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -140,11 +151,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                             child: new MaterialButton(
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "W",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -159,11 +170,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                             child: new MaterialButton(
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "E",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -179,11 +190,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "R",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -199,11 +210,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "T",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -219,11 +230,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "Y",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -239,11 +250,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "U",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -259,11 +270,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "I",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -279,11 +290,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "O",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -299,11 +310,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "P",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -325,11 +336,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                             child: new MaterialButton(
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "A",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -344,11 +355,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                             child: new MaterialButton(
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "S",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -363,11 +374,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                             child: new MaterialButton(
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "D",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -383,11 +394,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "F",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -403,11 +414,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "G",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -423,11 +434,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "H",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -443,11 +454,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "J",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -463,11 +474,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "K",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -483,11 +494,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "L",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -510,11 +521,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                             child: new MaterialButton(
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "Z",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -529,11 +540,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                             child: new MaterialButton(
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "X",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -548,11 +559,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                             child: new MaterialButton(
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "C",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -568,11 +579,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "V",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -588,11 +599,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "B",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -608,11 +619,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "N",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -628,11 +639,11 @@ class GetWordsListPresenterState extends State<GetWordsList>
                                 splashColor: Colors.yellow,
                                 padding: const EdgeInsets.all(3.0),
                                 // textColor: Colors.re,
-                                color: Color.fromRGBO(34, 80, 41, 89),
+                                //color: Color.fromRGBO(34, 80, 41, 89),
                                 child: new Text(
                                   "M",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 22,
                                     fontFamily: 'Lato',
                                     color: Colors.white,
                                     fontWeight: FontWeight.w300,
@@ -651,7 +662,7 @@ class GetWordsListPresenterState extends State<GetWordsList>
                       children: <Widget>[
                         new MaterialButton(
                           // textColor: Colors.re,
-                            color: Color.fromRGBO(34, 80, 41, 89),
+                            //color: Color.fromRGBO(34, 80, 41, 89),
                             child: new Text(
                               "BACK",
                               style: TextStyle(
@@ -673,7 +684,7 @@ class GetWordsListPresenterState extends State<GetWordsList>
                         ),
                         new MaterialButton(
                           // textColor: Colors.re,
-                            color: Color.fromRGBO(34, 80, 41, 89),
+                            //color: Color.fromRGBO(34, 80, 41, 89),
                             child: new Text(
                               "CHECK",
                               style: TextStyle(
@@ -696,7 +707,7 @@ class GetWordsListPresenterState extends State<GetWordsList>
 
       ),
     )
-    );
+    ));
   }
   Widget circularProgress = new Center(
       child: Padding(

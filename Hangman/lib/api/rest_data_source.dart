@@ -6,9 +6,9 @@ import 'package:hangman/utils/network_util.dart';
 
 class RestDataSource {
   NetworkUtil _networkUtil = new NetworkUtil();
-  //static final BASE_URL = "https://www.randomlists.com/data/";
+  static final BASE_URL = "https://github.com/boennemann/animals/blob/master/words.json";
 
-    static final BASE_URL="https://www.randomlists.com/data/vocabulary-words.json";
+   // static final BASE_URL="https://www.randomlists.com/data/vocabulary-words.json";
   Future<HMWordsList> getWordsList() async {
 //    EduPlusSharedPreference prefs = new EduPlusSharedPreference();
 //    bool isAuthenticated = await prefs.getBool(PreferenceKey.IS_USER_LOGGED_IN);
