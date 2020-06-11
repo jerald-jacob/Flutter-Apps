@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp1> {
     return new SplashScreen(
       loaderColor: Colors.white,
       seconds: 3,
-      navigateAfterSeconds: new GetWordsList(),
+      navigateAfterSeconds: new LoginPage(),
       title: new Text(
         'Tell me wow ',
         style: new TextStyle(

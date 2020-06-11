@@ -732,7 +732,7 @@ child:
               Padding(
                 padding: const EdgeInsets.only(left: 8, right: 8),
                 child: Text(
-                  "Please Wait..",
+                  "Please Wait.....",
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w600),
                 ),
