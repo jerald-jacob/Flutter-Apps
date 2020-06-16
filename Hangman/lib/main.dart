@@ -20,8 +20,7 @@ class MyApp1 extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp1> {
-  @override
-  Widget build(BuildContext context) {
+  @override Widget build(BuildContext context) {
     return new SplashScreen(
       loaderColor: Colors.white,
       seconds: 3,

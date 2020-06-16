@@ -5,6 +5,7 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 
 import '../one_player_page.dart';
 import 'login_page.dart';
+import 'tutorial.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -65,7 +66,7 @@ class _MainPageState extends State<MainPage> {
                       name,
                       style: TextStyle(
                           fontSize: 25,
-                          color: Colors.white.withOpacity(.5),
+                          color: Colors.white,
                           fontWeight: FontWeight.bold),
                     ),
                     Container(
@@ -110,38 +111,38 @@ class _MainPageState extends State<MainPage> {
                               SizedBox(
                                 height: 30,
                               ),
-                              RaisedButton(
-                                onPressed: () {
-                                  Navigator.of(context).push(_createRoute());
-                                },
-                                textColor: Colors.white,
-                                padding: const EdgeInsets.all(3.0),
-                                child: Container(
-                                  //   decoration: const BoxDecoration(
-                                  color: Color.fromRGBO(16, 50, 33, 20),
-//                            gradient: LinearGradient(
-//                              colors: <Color>[
-//                                Color(0xFF0D47A1),
-//                                Color(0xFF1976D2),
-//                                Color(0xFF42A5F5),
-//                              ],
-//                            ),
-                                  //   ),
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: const Text(
-                                    'TWO PLAYER',
-                                    style: TextStyle(
-                                      fontSize: 30,
-                                      fontFamily: 'Caesar_Dressing',
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 30,
-                              ),
+//                              RaisedButton(
+//                                onPressed: () {
+//                                  Navigator.of(context).push(_createRoute());
+//                                },
+//                                textColor: Colors.white,
+//                                padding: const EdgeInsets.all(3.0),
+//                                child: Container(
+//                                  //   decoration: const BoxDecoration(
+//                                  color: Color.fromRGBO(16, 50, 33, 20),
+////                            gradient: LinearGradient(
+////                              colors: <Color>[
+////                                Color(0xFF0D47A1),
+////                                Color(0xFF1976D2),
+////                                Color(0xFF42A5F5),
+////                              ],
+////                            ),
+//                                  //   ),
+//                                  padding: const EdgeInsets.all(10.0),
+//                                  child: const Text(
+//                                    'TWO PLAYER',
+//                                    style: TextStyle(
+//                                      fontSize: 30,
+//                                      fontFamily: 'Caesar_Dressing',
+//                                      color: Colors.white,
+//                                      fontWeight: FontWeight.bold,
+//                                    ),
+//                                  ),
+//                                ),
+//                              ),
+//                              SizedBox(
+//                                height: 30,
+//                              ),
                               RaisedButton(
                                 onPressed: () {
                                   _gameOptions();
@@ -194,6 +195,39 @@ class _MainPageState extends State<MainPage> {
                                   padding: const EdgeInsets.all(10.0),
                                   child: const Text(
                                     'ABOUT GAME',
+                                    style: TextStyle(
+                                      fontSize: 25,
+                                      fontFamily: 'Caesar_Dressing',
+                                      color: Colors.white,
+                                      //
+                                      // fontWeight: FontWeight.,
+                                    ),
+                                  ),
+                                ),
+                              ),  SizedBox(
+                                height: 30,
+                              ),
+                              RaisedButton(
+                                onPressed: () {
+                                  signOutGoogle();
+                                  Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) {return LoginPage();}), ModalRoute.withName('/'));
+                                },
+                                textColor: Colors.white,
+                                padding: const EdgeInsets.all(3.0),
+                                child: Container(
+                                  //   decoration: const BoxDecoration(
+                                  color: Color.fromRGBO(16, 50, 33, 20),
+//                            gradient: LinearGradient(
+//                              colors: <Color>[
+//                                Color(0xFF0D47A1),
+//                                Color(0xFF1976D2),
+//                                Color(0xFF42A5F5),
+//                              ],
+//                            ),
+                                  //   ),
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: const Text(
+                                    'EXIT GAME',
                                     style: TextStyle(
                                       fontSize: 25,
                                       fontFamily: 'Caesar_Dressing',
@@ -272,33 +306,45 @@ class _MainPageState extends State<MainPage> {
       context: context,
       style: alertStyle,
       // type: AlertType.error,
-      title: "Difficulty",
+      title: "STUDY BEFORE PLAY",
 
       image: Image.asset("images/icon.jpeg"),
 
       buttons: [
+//        DialogButton(
+//          child: Text(
+//            "EASY",
+//            style: TextStyle(color: Colors.white, fontSize: 20),
+//          ),
+//          onPressed: () {
+//            Navigator.push(context,
+//                new MaterialPageRoute(builder: (context) => new SecondPage()));
+//          },
+//          color: Color.fromRGBO(0, 179, 134, 1.0),
+//        ),
+//        DialogButton(
+//          child: Text(
+//            "HARD",
+//            style: TextStyle(color: Colors.white, fontSize: 20),
+//          ),
+//          onPressed: () {
+//            Navigator.push(context,
+//                new MaterialPageRoute(builder: (context) => new SecondPage()));
+//          },
+//          color: Color.fromRGBO(0, 179, 134, 1.0),
+//        ),
         DialogButton(
           child: Text(
-            "EASY",
+            "TUTORIAL",
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           onPressed: () {
             Navigator.push(context,
-                new MaterialPageRoute(builder: (context) => new FirstPage()));
+                new MaterialPageRoute(builder: (context) => new Tutorial()));
           },
           color: Color.fromRGBO(0, 179, 134, 1.0),
         ),
-        DialogButton(
-          child: Text(
-            "HARD",
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
-          onPressed: () {
-            Navigator.push(context,
-                new MaterialPageRoute(builder: (context) => new FirstPage()));
-          },
-          color: Color.fromRGBO(0, 179, 134, 1.0),
-        ),
+
       ],
     ).show();
   }
@@ -306,7 +352,7 @@ class _MainPageState extends State<MainPage> {
 
 Route _createRoute() {
   return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => FirstPage(),
+    pageBuilder: (context, animation, secondaryAnimation) => SecondPage(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
       return child;
     },

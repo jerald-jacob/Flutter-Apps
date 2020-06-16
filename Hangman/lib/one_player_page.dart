@@ -387,7 +387,9 @@ class _SecondPageState extends State<SecondPage> {
 
     //_controller.setLooping(true);
   }
-
+_audioMute(){
+  _controller.pause();
+}
   _loadCounter() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
@@ -399,6 +401,8 @@ class _SecondPageState extends State<SecondPage> {
   _incrementCounter() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
+      _audioMute();
+      print("audio muted");
       // _currentUser = myController.text;
     });
     // prefs.setString('name', _currentUser);
@@ -428,7 +432,7 @@ class _SecondPageState extends State<SecondPage> {
         }
       } else {
         this._wordFromAPI = data[1]['name'];
-
+        this._wordHint = data[1]['detail'];
         for (int i = 0; i < this._wordFromAPI.length; i++) {
           this.resultList.add(_filler);
         }
@@ -460,7 +464,7 @@ class _SecondPageState extends State<SecondPage> {
               ),
 
               Container(
-                height: 400,
+                height: 500,
                 color: Color.fromRGBO(34, 80, 41, 20),
                 margin: EdgeInsets.all(8.0),
                 child: Column(
@@ -470,9 +474,9 @@ class _SecondPageState extends State<SecondPage> {
                     ),
                     Container(
                         child: Text(
-                            "PLAYER " +
-                                _currentUser +
-                                "\n Hint : $_wordFromAPI",
+//                            "PLAYER " +
+//                                _currentUser +
+                                "\n Hint : $_wordHint",
                             style: TextStyle(
                               fontSize: 20,
                               fontFamily: 'Lato',
@@ -1053,24 +1057,24 @@ class _SecondPageState extends State<SecondPage> {
                                 Navigator.push(
                                     context,
                                     new MaterialPageRoute(
-                                        builder: (context) => new FirstPage()));
+                                        builder: (context) => new MainPage()));
                               }),
                           SizedBox(
                             width: 90,
                           ),
-                          new MaterialButton(
-                            // textColor: Colors.re,
-                              color: Color.fromRGBO(34, 80, 41, 89),
-                              child: new Text(
-                                "CHECK",
-                                style: TextStyle(
-                                  fontSize: 25,
-                                  fontFamily: 'Caesar_Dressing',
-                                  color: Colors.yellow,
-                                  fontWeight: FontWeight.w300,
-                                ),
-                              ),
-                              onPressed: _wordFromAPICount),
+//                          new MaterialButton(
+//                            // textColor: Colors.re,
+//                              color: Color.fromRGBO(34, 80, 41, 89),
+//                              child: new Text(
+//                                "CHECK",
+//                                style: TextStyle(
+//                                  fontSize: 25,
+//                                  fontFamily: 'Caesar_Dressing',
+//                                  color: Colors.yellow,
+//                                  fontWeight: FontWeight.w300,
+//                                ),
+//                              ),
+//                              onPressed: _wordFromAPICount),
                         ],
                       ),
                     ),
@@ -1187,7 +1191,7 @@ class _SecondPageState extends State<SecondPage> {
           ),
           onPressed: () {
             Navigator.push(context,
-                new MaterialPageRoute(builder: (context) => new SecondPage()));
+                new MaterialPageRoute(builder: (context) => new MainPage()));
           },
           width: 120,
         )
