@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hangman/screens/sign_in.dart';
@@ -13,6 +15,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+
 
   Widget build(BuildContext context) {
     double _screenHeight = MediaQuery.of(context).size.height;
@@ -348,6 +351,7 @@ class _MainPageState extends State<MainPage> {
       ],
     ).show();
   }
+
 }
 
 Route _createRoute() {
