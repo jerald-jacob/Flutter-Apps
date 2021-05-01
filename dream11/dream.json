@@ -1,502 +1,453 @@
-[
-    {
-        "id": "2",
-        "Team": "CSK",
-        "Role": "ALL",
-        "PlayerId": "36",
-        "Player": "Ravindra Jadeja",
-        "Points": "451",
-        "Credits": "9.5",
-        "Selected": "68.71"
-    },
-    {
-        "id": "3",
-        "Team": "MI",
-        "Role": "ALL",
-        "PlayerId": "315",
-        "Player": "Kieron Pollard",
-        "Points": "183",
-        "Credits": "8.5",
-        "Selected": "32.1"
-    },
-    {
-        "id": "4",
-        "Team": "MI",
-        "Role": "ALL",
-        "PlayerId": "1441",
-        "Player": "Jimmy Neesham",
-        "Points": "0",
-        "Credits": "8.5",
-        "Selected": "0.34"
-    },
-    {
-        "id": "5",
-        "Team": "CSK",
-        "Role": "ALL",
-        "PlayerId": "1488",
-        "Player": "Moeen Ali",
-        "Points": "355",
-        "Credits": "9.5",
-        "Selected": "62.16"
-    },
-    {
-        "id": "6",
-        "Team": "CSK",
-        "Role": "ALL",
-        "PlayerId": "3653",
-        "Player": "MItchell Santner",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.28"
-    },
-    {
-        "id": "7",
-        "Team": "CSK",
-        "Role": "ALL",
-        "PlayerId": "6332",
-        "Player": "Sam Curran",
-        "Points": "267",
-        "Credits": "9",
-        "Selected": "44.29"
-    },
-    {
-        "id": "8",
-        "Team": "CSK",
-        "Role": "ALL",
-        "PlayerId": "6821",
-        "Player": "Krishnappa Gowtham",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.17"
-    },
-    {
-        "id": "9",
-        "Team": "MI",
-        "Role": "ALL",
-        "PlayerId": "9483",
-        "Player": "Krunal Pandya",
-        "Points": "217",
-        "Credits": "8.5",
-        "Selected": "36.95"
-    },
-    {
-        "id": "10",
-        "Team": "MI",
-        "Role": "ALL",
-        "PlayerId": "11660",
-        "Player": "Anukul Sudhakar Roy",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.19"
-    },
-    {
-        "id": "11",
-        "Team": "MI",
-        "Role": "ALL",
-        "PlayerId": "13842",
-        "Player": "Arjun Tendulkar",
-        "Points": "0",
-        "Credits": "7.5",
-        "Selected": "0.58"
-    },
-    {
-        "id": "12",
-        "Team": "CSK",
-        "Role": "ALL",
-        "PlayerId": "61181",
-        "Player": "Bhagath Varma",
-        "Points": "0",
-        "Credits": "7.5",
-        "Selected": "0.39"
-    },
-    {
-        "id": "13",
-        "Team": "CSK",
-        "Role": "WK",
-        "PlayerId": "1",
-        "Player": "MS Dhoni",
-        "Points": "101",
-        "Credits": "8.5",
-        "Selected": "18.58"
-    },
-    {
-        "id": "14",
-        "Team": "MI",
-        "Role": "WK",
-        "PlayerId": "971",
-        "Player": "Aditya Tare",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.6"
-    },
-    {
-        "id": "15",
-        "Team": "MI",
-        "Role": "WK",
-        "PlayerId": "1343",
-        "Player": "Quinton de Kock",
-        "Points": "198",
-        "Credits": "9.5",
-        "Selected": "90.21"
-    },
-    {
-        "id": "16",
-        "Team": "MI",
-        "Role": "WK",
-        "PlayerId": "9161",
-        "Player": "Ishan Kishan",
-        "Points": "98",
-        "Credits": "8.5",
-        "Selected": "5.65"
-    },
-    {
-        "id": "17",
-        "Team": "CSK",
-        "Role": "WK",
-        "PlayerId": "10178",
-        "Player": "Narayan Jagadeesan",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.55"
-    },
-    {
-        "id": "18",
-        "Team": "CSK",
-        "Role": "BAT",
-        "PlayerId": "4",
-        "Player": "Robin Uthappa",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.34"
-    },
-    {
-        "id": "19",
-        "Team": "MI",
-        "Role": "BAT",
-        "PlayerId": "6",
-        "Player": "Rohit Sharma",
-        "Points": "297",
-        "Credits": "10",
-        "Selected": "80.66"
-    },
-    {
-        "id": "20",
-        "Team": "CSK",
-        "Role": "BAT",
-        "PlayerId": "7",
-        "Player": "Suresh Raina",
-        "Points": "198",
-        "Credits": "9",
-        "Selected": "35.93"
-    },
-    {
-        "id": "21",
-        "Team": "MI",
-        "Role": "BAT",
-        "PlayerId": "692",
-        "Player": "Saurabh Tiwary",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.34"
-    },
-    {
-        "id": "22",
-        "Team": "CSK",
-        "Role": "BAT",
-        "PlayerId": "701",
-        "Player": "Cheteshwar Pujara",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.43"
-    },
-    {
-        "id": "23",
-        "Team": "CSK",
-        "Role": "BAT",
-        "PlayerId": "974",
-        "Player": "AmBATi Rayudu",
-        "Points": "106",
-        "Credits": "8.5",
-        "Selected": "13.81"
-    },
-    {
-        "id": "24",
-        "Team": "CSK",
-        "Role": "BAT",
-        "PlayerId": "1085",
-        "Player": "Faf du Plessis",
-        "Points": "413",
-        "Credits": "10",
-        "Selected": "86.92"
-    },
-    {
-        "id": "25",
-        "Team": "MI",
-        "Role": "BAT",
-        "PlayerId": "1110",
-        "Player": "Chris Lynn",
-        "Points": "85",
-        "Credits": "8.5",
-        "Selected": "0.76"
-    },
-    {
-        "id": "26",
-        "Team": "MI",
-        "Role": "BAT",
-        "PlayerId": "1143",
-        "Player": "Suryakumar Yadav",
-        "Points": "288",
-        "Credits": "9.5",
-        "Selected": "76.76"
-    },
-    {
-        "id": "27",
-        "Team": "MI",
-        "Role": "BAT",
-        "PlayerId": "5983",
-        "Player": "Hardik Pandya",
-        "Points": "89",
-        "Credits": "8.5",
-        "Selected": "14.65"
-    },
-    {
-        "id": "28",
-        "Team": "MI",
-        "Role": "BAT",
-        "PlayerId": "9158",
-        "Player": "Anmolpreet Singh",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.42"
-    },
-    {
-        "id": "29",
-        "Team": "CSK",
-        "Role": "BAT",
-        "PlayerId": "11599",
-        "Player": "Ruturaj Gaikwad",
-        "Points": "292",
-        "Credits": "8.5",
-        "Selected": "77.54"
-    },
-    {
-        "id": "30",
-        "Team": "CSK",
-        "Role": "BAT",
-        "PlayerId": "12585",
-        "Player": "C Hari Nishanth",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.34"
-    },
-    {
-        "id": "31",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "10",
-        "Player": "Piyush Chawla",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.54"
-    },
-    {
-        "id": "32",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "298",
-        "Player": "Dwayne Bravo",
-        "Points": "129",
-        "Credits": "8.5",
-        "Selected": "4.48"
-    },
-    {
-        "id": "33",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "684",
-        "Player": "Dhawal Kulkarni",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.41"
-    },
-    {
-        "id": "34",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "736",
-        "Player": "Karn Sharma",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.31"
-    },
-    {
-        "id": "35",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "1027",
-        "Player": "Adam MIlne",
-        "Points": "10",
-        "Credits": "8",
-        "Selected": "0.29"
-    },
-    {
-        "id": "36",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "1086",
-        "Player": "Imran Tahir",
-        "Points": "80",
-        "Credits": "8.5",
-        "Selected": "5.11"
-    },
-    {
-        "id": "37",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "1121",
-        "Player": "Deepak Chahar",
-        "Points": "280",
-        "Credits": "8.5",
-        "Selected": "60.59"
-    },
-    {
-        "id": "38",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "1193",
-        "Player": "Trent Boult",
-        "Points": "262",
-        "Credits": "9",
-        "Selected": "63.39"
-    },
-    {
-        "id": "39",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "1347",
-        "Player": "Nathan Coulter-Nile",
-        "Points": "4",
-        "Credits": "8",
-        "Selected": "23.72"
-    },
-    {
-        "id": "40",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "1421",
-        "Player": "Jason Behrendorff",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.39"
-    },
-    {
-        "id": "41",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "1532",
-        "Player": "Jasprit Bumrah",
-        "Points": "199",
-        "Credits": "9",
-        "Selected": "35.91"
-    },
-    {
-        "id": "42",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "2104",
-        "Player": "Shardul Thakur",
-        "Points": "141",
-        "Credits": "8.5",
-        "Selected": "12.38"
-    },
-    {
-        "id": "43",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "2109",
-        "Player": "Jayant Yadav",
-        "Points": "69",
-        "Credits": "8",
-        "Selected": "17.04"
-    },
-    {
-        "id": "44",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "8506",
-        "Player": "Lungi Ngidi",
-        "Points": "155",
-        "Credits": "8.5",
-        "Selected": "48.85"
-    },
-    {
-        "id": "45",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "10144",
-        "Player": "Ravisrinivasan Sai Kishore",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.12"
-    },
-    {
-        "id": "46",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "11528",
-        "Player": "Rahul Chahar",
-        "Points": "354",
-        "Credits": "8.5",
-        "Selected": "73.44"
-    },
-    {
-        "id": "47",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "13758",
-        "Player": "KM Asif",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.15"
-    },
-    {
-        "id": "48",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "15120",
-        "Player": "Mohsin Khan",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.28"
-    },
-    {
-        "id": "49",
-        "Team": "CSK",
-        "Role": "BOWL",
-        "PlayerId": "15337",
-        "Player": "Harishankar Reddy",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.42"
-    },
-    {
-        "id": "50",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "21036",
-        "Player": "Marco Jansen",
-        "Points": "66",
-        "Credits": "8",
-        "Selected": "1.11"
-    },
-    {
-        "id": "51",
-        "Team": "MI",
-        "Role": "BOWL",
-        "PlayerId": "57502",
-        "Player": "Yudhvir Singh Charak",
-        "Points": "0",
-        "Credits": "8",
-        "Selected": "0.4"
-    }
-]
+{
+	"DramData": [{
+		"id": "2",
+		"Team": "CSK",
+		"Role": "ALL",
+		"PlayerId": "36",
+		"Player": "Ravindra Jadeja",
+		"Points": "451",
+		"Credits": "9.5",
+		"Selected": "68.71"
+	}, {
+		"id": "3",
+		"Team": "MI",
+		"Role": "ALL",
+		"PlayerId": "315",
+		"Player": "Kieron Pollard",
+		"Points": "183",
+		"Credits": "8.5",
+		"Selected": "32.1"
+	}, {
+		"id": "4",
+		"Team": "MI",
+		"Role": "ALL",
+		"PlayerId": "1441",
+		"Player": "Jimmy Neesham",
+		"Points": "0",
+		"Credits": "8.5",
+		"Selected": "0.34"
+	}, {
+		"id": "5",
+		"Team": "CSK",
+		"Role": "ALL",
+		"PlayerId": "1488",
+		"Player": "Moeen Ali",
+		"Points": "355",
+		"Credits": "9.5",
+		"Selected": "62.16"
+	}, {
+		"id": "6",
+		"Team": "CSK",
+		"Role": "ALL",
+		"PlayerId": "3653",
+		"Player": "MItchell Santner",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.28"
+	}, {
+		"id": "7",
+		"Team": "CSK",
+		"Role": "ALL",
+		"PlayerId": "6332",
+		"Player": "Sam Curran",
+		"Points": "267",
+		"Credits": "9",
+		"Selected": "44.29"
+	}, {
+		"id": "8",
+		"Team": "CSK",
+		"Role": "ALL",
+		"PlayerId": "6821",
+		"Player": "Krishnappa Gowtham",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.17"
+	}, {
+		"id": "9",
+		"Team": "MI",
+		"Role": "ALL",
+		"PlayerId": "9483",
+		"Player": "Krunal Pandya",
+		"Points": "217",
+		"Credits": "8.5",
+		"Selected": "36.95"
+	}, {
+		"id": "10",
+		"Team": "MI",
+		"Role": "ALL",
+		"PlayerId": "11660",
+		"Player": "Anukul Sudhakar Roy",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.19"
+	}, {
+		"id": "11",
+		"Team": "MI",
+		"Role": "ALL",
+		"PlayerId": "13842",
+		"Player": "Arjun Tendulkar",
+		"Points": "0",
+		"Credits": "7.5",
+		"Selected": "0.58"
+	}, {
+		"id": "12",
+		"Team": "CSK",
+		"Role": "ALL",
+		"PlayerId": "61181",
+		"Player": "Bhagath Varma",
+		"Points": "0",
+		"Credits": "7.5",
+		"Selected": "0.39"
+	}, {
+		"id": "13",
+		"Team": "CSK",
+		"Role": "WK",
+		"PlayerId": "1",
+		"Player": "MS Dhoni",
+		"Points": "101",
+		"Credits": "8.5",
+		"Selected": "18.58"
+	}, {
+		"id": "14",
+		"Team": "MI",
+		"Role": "WK",
+		"PlayerId": "971",
+		"Player": "Aditya Tare",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.6"
+	}, {
+		"id": "15",
+		"Team": "MI",
+		"Role": "WK",
+		"PlayerId": "1343",
+		"Player": "Quinton de Kock",
+		"Points": "198",
+		"Credits": "9.5",
+		"Selected": "90.21"
+	}, {
+		"id": "16",
+		"Team": "MI",
+		"Role": "WK",
+		"PlayerId": "9161",
+		"Player": "Ishan Kishan",
+		"Points": "98",
+		"Credits": "8.5",
+		"Selected": "5.65"
+	}, {
+		"id": "17",
+		"Team": "CSK",
+		"Role": "WK",
+		"PlayerId": "10178",
+		"Player": "Narayan Jagadeesan",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.55"
+	}, {
+		"id": "18",
+		"Team": "CSK",
+		"Role": "BAT",
+		"PlayerId": "4",
+		"Player": "Robin Uthappa",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.34"
+	}, {
+		"id": "19",
+		"Team": "MI",
+		"Role": "BAT",
+		"PlayerId": "6",
+		"Player": "Rohit Sharma",
+		"Points": "297",
+		"Credits": "10",
+		"Selected": "80.66"
+	}, {
+		"id": "20",
+		"Team": "CSK",
+		"Role": "BAT",
+		"PlayerId": "7",
+		"Player": "Suresh Raina",
+		"Points": "198",
+		"Credits": "9",
+		"Selected": "35.93"
+	}, {
+		"id": "21",
+		"Team": "MI",
+		"Role": "BAT",
+		"PlayerId": "692",
+		"Player": "Saurabh Tiwary",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.34"
+	}, {
+		"id": "22",
+		"Team": "CSK",
+		"Role": "BAT",
+		"PlayerId": "701",
+		"Player": "Cheteshwar Pujara",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.43"
+	}, {
+		"id": "23",
+		"Team": "CSK",
+		"Role": "BAT",
+		"PlayerId": "974",
+		"Player": "AmBATi Rayudu",
+		"Points": "106",
+		"Credits": "8.5",
+		"Selected": "13.81"
+	}, {
+		"id": "24",
+		"Team": "CSK",
+		"Role": "BAT",
+		"PlayerId": "1085",
+		"Player": "Faf du Plessis",
+		"Points": "413",
+		"Credits": "10",
+		"Selected": "86.92"
+	}, {
+		"id": "25",
+		"Team": "MI",
+		"Role": "BAT",
+		"PlayerId": "1110",
+		"Player": "Chris Lynn",
+		"Points": "85",
+		"Credits": "8.5",
+		"Selected": "0.76"
+	}, {
+		"id": "26",
+		"Team": "MI",
+		"Role": "BAT",
+		"PlayerId": "1143",
+		"Player": "Suryakumar Yadav",
+		"Points": "288",
+		"Credits": "9.5",
+		"Selected": "76.76"
+	}, {
+		"id": "27",
+		"Team": "MI",
+		"Role": "BAT",
+		"PlayerId": "5983",
+		"Player": "Hardik Pandya",
+		"Points": "89",
+		"Credits": "8.5",
+		"Selected": "14.65"
+	}, {
+		"id": "28",
+		"Team": "MI",
+		"Role": "BAT",
+		"PlayerId": "9158",
+		"Player": "Anmolpreet Singh",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.42"
+	}, {
+		"id": "29",
+		"Team": "CSK",
+		"Role": "BAT",
+		"PlayerId": "11599",
+		"Player": "Ruturaj Gaikwad",
+		"Points": "292",
+		"Credits": "8.5",
+		"Selected": "77.54"
+	}, {
+		"id": "30",
+		"Team": "CSK",
+		"Role": "BAT",
+		"PlayerId": "12585",
+		"Player": "C Hari Nishanth",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.34"
+	}, {
+		"id": "31",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "10",
+		"Player": "Piyush Chawla",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.54"
+	}, {
+		"id": "32",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "298",
+		"Player": "Dwayne Bravo",
+		"Points": "129",
+		"Credits": "8.5",
+		"Selected": "4.48"
+	}, {
+		"id": "33",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "684",
+		"Player": "Dhawal Kulkarni",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.41"
+	}, {
+		"id": "34",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "736",
+		"Player": "Karn Sharma",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.31"
+	}, {
+		"id": "35",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "1027",
+		"Player": "Adam MIlne",
+		"Points": "10",
+		"Credits": "8",
+		"Selected": "0.29"
+	}, {
+		"id": "36",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "1086",
+		"Player": "Imran Tahir",
+		"Points": "80",
+		"Credits": "8.5",
+		"Selected": "5.11"
+	}, {
+		"id": "37",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "1121",
+		"Player": "Deepak Chahar",
+		"Points": "280",
+		"Credits": "8.5",
+		"Selected": "60.59"
+	}, {
+		"id": "38",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "1193",
+		"Player": "Trent Boult",
+		"Points": "262",
+		"Credits": "9",
+		"Selected": "63.39"
+	}, {
+		"id": "39",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "1347",
+		"Player": "Nathan Coulter-Nile",
+		"Points": "4",
+		"Credits": "8",
+		"Selected": "23.72"
+	}, {
+		"id": "40",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "1421",
+		"Player": "Jason Behrendorff",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.39"
+	}, {
+		"id": "41",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "1532",
+		"Player": "Jasprit Bumrah",
+		"Points": "199",
+		"Credits": "9",
+		"Selected": "35.91"
+	}, {
+		"id": "42",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "2104",
+		"Player": "Shardul Thakur",
+		"Points": "141",
+		"Credits": "8.5",
+		"Selected": "12.38"
+	}, {
+		"id": "43",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "2109",
+		"Player": "Jayant Yadav",
+		"Points": "69",
+		"Credits": "8",
+		"Selected": "17.04"
+	}, {
+		"id": "44",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "8506",
+		"Player": "Lungi Ngidi",
+		"Points": "155",
+		"Credits": "8.5",
+		"Selected": "48.85"
+	}, {
+		"id": "45",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "10144",
+		"Player": "Ravisrinivasan Sai Kishore",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.12"
+	}, {
+		"id": "46",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "11528",
+		"Player": "Rahul Chahar",
+		"Points": "354",
+		"Credits": "8.5",
+		"Selected": "73.44"
+	}, {
+		"id": "47",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "13758",
+		"Player": "KM Asif",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.15"
+	}, {
+		"id": "48",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "15120",
+		"Player": "Mohsin Khan",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.28"
+	}, {
+		"id": "49",
+		"Team": "CSK",
+		"Role": "BOWL",
+		"PlayerId": "15337",
+		"Player": "Harishankar Reddy",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.42"
+	}, {
+		"id": "50",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "21036",
+		"Player": "Marco Jansen",
+		"Points": "66",
+		"Credits": "8",
+		"Selected": "1.11"
+	}, {
+		"id": "51",
+		"Team": "MI",
+		"Role": "BOWL",
+		"PlayerId": "57502",
+		"Player": "Yudhvir Singh Charak",
+		"Points": "0",
+		"Credits": "8",
+		"Selected": "0.4"
+	}]
+}
